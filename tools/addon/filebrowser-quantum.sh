@@ -2,7 +2,7 @@
 
 # Copyright (c) 2021-2025 community-scripts ORG
 # Author: MickLesk
-# License: MIT | https://github.com/community-scripts/ProxmoxVE/raw/main/LICENSE
+# License: MIT | https://github.com/BennyExtreme/ProxmoxVE/raw/main/LICENSE
 
 function header_info() {
   clear
@@ -27,7 +27,7 @@ INFO="${BL}ℹ️${CL}"
 
 APP="FileBrowser Quantum"
 INSTALL_PATH="/usr/local/bin/filebrowser"
-CONFIG_PATH="/usr/local/community-scripts/fq-config.yaml"
+CONFIG_PATH="/usr/local/BennyExtreme/fq-config.yaml"
 DEFAULT_PORT=8080
 SRC_DIR="/"
 
@@ -58,7 +58,7 @@ function msg_ok() { echo -e "${CM} ${GN}$1${CL}"; }
 function msg_error() { echo -e "${CROSS} ${RD}$1${CL}"; }
 
 # Detect legacy FileBrowser installation
-LEGACY_DB="/usr/local/community-scripts/filebrowser.db"
+LEGACY_DB="/usr/local/BennyExtreme/filebrowser.db"
 LEGACY_BIN="/usr/local/bin/filebrowser"
 LEGACY_SERVICE_DEB="/etc/systemd/system/filebrowser.service"
 LEGACY_SERVICE_ALP="/etc/init.d/filebrowser"
@@ -138,9 +138,9 @@ chmod +x "$INSTALL_PATH"
 msg_ok "Installed ${APP}"
 
 msg_info "Preparing configuration directory"
-mkdir -p /usr/local/community-scripts
-chown root:root /usr/local/community-scripts
-chmod 755 /usr/local/community-scripts
+mkdir -p /usr/local/BennyExtreme
+chown root:root /usr/local/BennyExtreme
+chmod 755 /usr/local/BennyExtreme
 msg_ok "Directory prepared"
 
 echo -n "Use No Authentication? (y/N): "
@@ -206,7 +206,7 @@ After=network.target
 
 [Service]
 User=root
-WorkingDirectory=/usr/local/community-scripts
+WorkingDirectory=/usr/local/BennyExtreme
 ExecStart=/usr/local/bin/filebrowser -c $CONFIG_PATH
 Restart=always
 
@@ -221,8 +221,8 @@ else
 command="/usr/local/bin/filebrowser"
 command_args="-c $CONFIG_PATH"
 command_background=true
-directory="/usr/local/community-scripts"
-pidfile="/usr/local/community-scripts/pidfile"
+directory="/usr/local/BennyExtreme"
+pidfile="/usr/local/BennyExtreme/pidfile"
 
 depend() {
     need net

@@ -40,9 +40,9 @@ export const metadata: Metadata = {
   ],
   creator: "Bram Suurd",
   publisher: "Community Scripts",
-  metadataBase: new URL(`https://community-scripts.github.io/${basePath}/`),
+  metadataBase: new URL(`https://BennyExtreme.github.io/${basePath}/`),
   alternates: {
-    canonical: `https://community-scripts.github.io/${basePath}/`,
+    canonical: `https://BennyExtreme.github.io/${basePath}/`,
   },
   viewport: {
     width: "device-width",
@@ -58,11 +58,11 @@ export const metadata: Metadata = {
     title: "Proxmox VE Helper-Scripts",
     description:
       "The official website for the Proxmox VE Helper-Scripts (Community) repository. Featuring over 400+ scripts to help you manage your Proxmox Virtual Environment.",
-    url: `https://community-scripts.github.io/${basePath}/`,
+    url: `https://BennyExtreme.github.io/${basePath}/`,
     siteName: "Proxmox VE Helper-Scripts",
     images: [
       {
-        url: `https://community-scripts.github.io/${basePath}/defaultimg.png`,
+        url: `https://BennyExtreme.github.io/${basePath}/defaultimg.png`,
         width: 1200,
         height: 630,
         alt: "Proxmox VE Helper-Scripts",
@@ -77,7 +77,7 @@ export const metadata: Metadata = {
     creator: "@BramSuurdje",
     description:
       "The official website for the Proxmox VE Helper-Scripts (Community) repository. Featuring over 400+ scripts to help you manage your Proxmox Virtual Environment.",
-    images: [`https://community-scripts.github.io/${basePath}/defaultimg.png`],
+    images: [`https://BennyExtreme.github.io/${basePath}/defaultimg.png`],
   },
   manifest: "/manifest.webmanifest",
   appleWebApp: {

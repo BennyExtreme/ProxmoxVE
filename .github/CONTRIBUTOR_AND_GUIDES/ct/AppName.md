@@ -52,11 +52,11 @@ source <(curl -s https://raw.githubusercontent.com/[USER]/[REPO]/refs/heads/[BRA
 Final script:
 
 ```bash
-source <(curl -fsSL https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/misc/build.func)
+source <(curl -fsSL https://raw.githubusercontent.com/BennyExtreme/ProxmoxVE/main/misc/build.func)
 ```
 
 > [!CAUTION]
-> Before opening a Pull Request, change the URLs to point to the community-scripts repo.
+> Before opening a Pull Request, change the URLs to point to the BennyExtreme repo.
 
 ### 1.3 **Metadata**
 
@@ -67,7 +67,7 @@ Example:
 ```bash
 # Copyright (c) 2021-2025 community-scripts ORG
 # Author: [YourUserName]
-# License: MIT | https://github.com/community-scripts/ProxmoxVE/raw/main/LICENSE
+# License: MIT | https://github.com/BennyExtreme/ProxmoxVE/raw/main/LICENSE
 # Source: [SOURCE_URL]
 ```
 
